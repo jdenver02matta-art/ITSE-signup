@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ITSE | Home</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ITSE
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="nav-right">
+
+            <!-- SEARCH -->
+
+            <form
+                id="searchForm"
+                class="search"
+            >
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search..."
+                >
+
+                <button type="submit">
+                    ⌕
+                </button>
+
+            </form>
+
+
+            <!-- SIGN IN -->
+
+            <button
+                id="signInBtn"
+                class="signin-btn"
+            >
+                Sign In
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                INFORMATION TECHNOLOGY
+            </p>
+
+
+            <h1>
+
+                Step Into the
+
+                <span>
+                    Digital Future.
+                </span>
+
+            </h1>
+
+
+            <p class="hero-text">
+
+                Explore technology, innovation,
+                and digital solutions designed
+                to connect ideas with the future.
+
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="#about"
+                    class="primary-btn"
+                >
+                    Explore More
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="secondary-btn"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section
+        id="about"
+        class="section"
+    >
+
+        <div>
+
+            <p class="eyebrow">
+                ABOUT ITSE
+            </p>
+
+            <h2>
+                Technology that opens
+                new possibilities.
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            ITSE is a modern technology-focused
+            space for learning, creating, and
+            connecting.
+
+            Replace this text with your actual
+            information about your organization,
+            school, or project.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section
+        id="contact"
+        class="section contact"
+    >
+
+        <div>
+
+            <p class="eyebrow">
+                CONTACT
+            </p>
+
+            <h2>
+                Let's build something great.
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Email:
+            hello@itse.example
+
+            <br><br>
+
+            Phone:
+            +63 900 000 0000
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         SIGN IN MODAL
+    ========================== -->
+
+    <div
+        id="signInModal"
+        class="modal"
+    >
+
+        <div class="modal-box">
+
+
+            <button
+                id="closeModal"
+                class="close"
+            >
+                &times;
+            </button>
+
+
+            <p class="eyebrow">
+                WELCOME BACK
+            </p>
+
+
+            <h2>
+                Sign In
+            </h2>
+
+
+            <form id="loginForm">
+
+
+                <div class="input-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="signup-button"
+                >
+                    Sign In
+                </button>
+
+
+            </form>
+
+
+            <p id="loginMessage"></p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

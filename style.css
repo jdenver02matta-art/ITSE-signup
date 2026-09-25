@@ -1,0 +1,974 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+
+    background: #020b22;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #4de8ff;
+
+    text-shadow:
+        0 0 10px #00cfff,
+        0 0 20px #00cfff;
+}
+
+
+/* =========================================
+   SIGN UP PAGE
+========================================= */
+
+.signup-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1, 8, 28, 0.88),
+            rgba(1, 8, 28, 0.55)
+        ),
+
+        url("ITSE.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/* SIGNUP CONTAINER */
+
+.signup-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    border: 1px solid
+        rgba(71, 218, 255, 0.35);
+
+    border-radius: 25px;
+
+    background:
+        rgba(2, 15, 42, 0.85);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 0 60px
+        rgba(0, 180, 255, 0.2);
+
+}
+
+
+/* =========================================
+   SIGNUP LEFT
+========================================= */
+
+.signup-info {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 115, 180, 0.25),
+            rgba(0, 15, 45, 0.2)
+        );
+}
+
+
+.signup-text {
+
+    margin-bottom: 80px;
+
+}
+
+
+.signup-text h1 {
+
+    font-size: clamp(
+        45px,
+        5vw,
+        75px
+    );
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.signup-text h1 span {
+
+    display: block;
+
+    color: #32ddff;
+
+    text-shadow:
+        0 0 25px
+        rgba(0, 212, 255, 0.7);
+
+}
+
+
+.signup-text > p:last-child {
+
+    max-width: 450px;
+
+    color: #b7cee0;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.eyebrow {
+
+    color: #54e4ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   SIGNUP RIGHT
+========================================= */
+
+.signup-box {
+
+    padding: 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background:
+        rgba(1, 12, 35, 0.7);
+
+}
+
+
+.signup-box h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.subtitle {
+
+    color: #8eabc1;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.input-group {
+
+    margin-bottom: 17px;
+
+}
+
+
+.input-group label {
+
+    display: block;
+
+    color: #c4d9ec;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.input-group input {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid
+        #24547b;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    color: white;
+
+    background:
+        rgba(3, 25, 58, 0.9);
+
+    transition: 0.3s;
+
+}
+
+
+.input-group input:focus {
+
+    border-color: #39dcff;
+
+    box-shadow:
+        0 0 12px
+        rgba(30, 210, 255, 0.25);
+
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.terms {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #8faec5;
+
+    font-size: 13px;
+
+    margin: 15px 0 20px;
+
+}
+
+
+.terms input {
+
+    accent-color: #28cfff;
+
+}
+
+
+/* =========================================
+   SIGNUP BUTTON
+========================================= */
+
+.signup-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #34d9ff;
+
+    border-radius: 25px;
+
+    color: #021126;
+
+    background:
+        linear-gradient(
+            135deg,
+            #69f1ff,
+            #168cff
+        );
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.signup-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 25px
+        rgba(25, 211, 255, 0.65);
+
+}
+
+
+/* =========================================
+   SIGNUP MESSAGE
+========================================= */
+
+.signup-message {
+
+    text-align: center;
+
+    color: #55e6ff;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   LOGIN TEXT
+========================================= */
+
+.login-text {
+
+    margin-top: 22px;
+
+    text-align: center;
+
+    color: #7896ad;
+
+    font-size: 14px;
+
+}
+
+
+.login-text a {
+
+    color: #43e3ff;
+
+    text-decoration: none;
+
+}
+
+
+.login-text a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 20px 5%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(1, 9, 28, 0.9),
+            rgba(1, 9, 28, 0)
+        );
+
+}
+
+
+/* NAV LINKS */
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    color: #4de8ff;
+
+    text-shadow:
+        0 0 10px #00cfff;
+
+}
+
+
+/* RIGHT NAV */
+
+.nav-right {
+
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search {
+
+    display: flex;
+
+    border:
+        1px solid
+        rgba(65, 207, 255, 0.5);
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background:
+        rgba(2, 17, 48, 0.7);
+
+}
+
+
+.search input {
+
+    width: 150px;
+
+    padding: 10px 14px;
+
+    border: none;
+
+    outline: none;
+
+    color: white;
+
+    background: transparent;
+
+}
+
+
+.search input::placeholder {
+
+    color: #9abbd5;
+
+}
+
+
+.search button {
+
+    padding: 8px 13px;
+
+    border: none;
+
+    color: #7beaff;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================
+   SIGN IN BUTTON
+========================================= */
+
+.signin-btn {
+
+    padding: 11px 20px;
+
+    border: 1px solid #34d9ff;
+
+    border-radius: 25px;
+
+    color: #021126;
+
+    background:
+        linear-gradient(
+            135deg,
+            #69f1ff,
+            #168cff
+        );
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   HOME HERO
+========================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 120px 9% 70px;
+
+    position: relative;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(1, 8, 28, 0.8),
+            rgba(1, 8, 28, 0.2)
+        ),
+
+        url("ITSE.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(
+        50px,
+        7vw,
+        100px
+    );
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #32ddff;
+
+    text-shadow:
+        0 0 30px
+        rgba(0, 212, 255, 0.7);
+
+}
+
+
+.hero-text {
+
+    max-width: 540px;
+
+    margin: 30px 0;
+
+    color: #c4d9ec;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   HOME BUTTONS
+========================================= */
+
+.buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+
+.primary-btn {
+
+    border: 1px solid #34d9ff;
+
+    color: #021126;
+
+    background:
+        linear-gradient(
+            135deg,
+            #69f1ff,
+            #168cff
+        );
+
+}
+
+
+.secondary-btn {
+
+    border:
+        1px solid
+        rgba(101, 220, 255, 0.6);
+
+    color: #d9f8ff;
+
+    background:
+        rgba(3, 30, 68, 0.5);
+
+}
+
+
+/* =========================================
+   ABOUT / CONTACT
+========================================= */
+
+.section {
+
+    min-height: 60vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 90px 10%;
+
+    background: #03102b;
+
+    border-top:
+        1px solid
+        rgba(52, 201, 255, 0.15);
+
+}
+
+
+.section h2 {
+
+    font-size:
+        clamp(35px, 4vw, 60px);
+
+    line-height: 1.05;
+
+}
+
+
+.section > p {
+
+    color: #a8c3d8;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+}
+
+
+.contact {
+
+    background: #02091c;
+
+}
+
+
+/* =========================================
+   SIGN IN MODAL
+========================================= */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        rgba(0, 4, 15, 0.8);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.modal.show {
+
+    display: flex;
+
+}
+
+
+.modal-box {
+
+    position: relative;
+
+    width: 430px;
+
+    max-width: 90%;
+
+    padding: 40px;
+
+    border:
+        1px solid
+        rgba(71, 218, 255, 0.45);
+
+    border-radius: 20px;
+
+    background:
+        rgba(3, 19, 49, 0.97);
+
+    box-shadow:
+        0 0 50px
+        rgba(0, 191, 255, 0.2);
+
+}
+
+
+.modal-box h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.close {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+    border: none;
+
+    background: none;
+
+    color: #9bdff5;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+}
+
+
+#loginMessage {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #55e6ff;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .signup-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .signup-info {
+
+        min-height: 350px;
+
+    }
+
+    .navbar {
+
+        flex-wrap: wrap;
+
+        padding: 15px 5%;
+
+    }
+
+    nav {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .signup-page {
+
+        padding: 10px;
+
+    }
+
+    .signup-info {
+
+        padding: 30px;
+
+    }
+
+    .signup-box {
+
+        padding: 30px;
+
+    }
+
+    .search {
+
+        display: none;
+
+    }
+
+    .hero {
+
+        padding: 140px 7% 70px;
+
+    }
+
+}
